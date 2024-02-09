@@ -4,7 +4,7 @@ import Container from '../Container/Container';
 const AddUser = () => {
     return (
         <Container>
-            <div className=' px-10 py-5 mt-8 bg-gray-200 rounded-xl'>
+            <div className=' px-10 py-5 mt-8 -mb-20 bg-gray-200 rounded-xl'>
                 <form onSubmit={''}>
                     {/* reciepe name input */}
                     <div className='md:flex items-center justify-between gap-5'>
@@ -54,6 +54,7 @@ const AddUser = () => {
                     
                     <div className='text-center'>
                         <input className='btn text-white font-semibold text-lg mt-4 text-center btn-wide bg-green-700 border-none' type="submit" value="Add New Item" />
+
                     </div>
                 </form>
             </div>
