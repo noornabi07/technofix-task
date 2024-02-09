@@ -1,10 +1,11 @@
 import { BiSearch } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 const Search = () => {
     return (
-        <div className='border-[1px] w-full md:w-auto py-2 rounded-full shadow-sm hover:shadow-md transition cursor-pointer'>
-            <div className='flex flex-row items-center justify-between'>
-                <div className='text-sm font-semibold text-gray-600 px-6'>Users Inform</div>
+        <div className=' w-full md:w-auto transition cursor-pointer'>
+            <div className='flex flex-row gap-3 items-center justify-between'>
+                {/* <div className='text-sm font-semibold text-gray-600 px-6'>Users Inform</div>
                 <div className='hidden sm:block text-sm text-gray-600 font-semibold px-6 border-x-[1px] flex-1 text-center'>
                     Any Week
                 </div>
@@ -13,7 +14,10 @@ const Search = () => {
                     <div className='p-2 bg-green-500 rounded-full text-white'>
                         <BiSearch size={18} />
                     </div>
-                </div>
+                </div> */}
+                <Link to='/' className='text-lg font-semibold text-green-600'>Home</Link>
+                <Link to='/adduser' className='text-lg font-semibold text-green-600'>Add User</Link>
+                <Link className='text-lg font-semibold text-green-600'>Contact</Link>
             </div>
         </div>
     )
