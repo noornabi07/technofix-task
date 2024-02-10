@@ -8,8 +8,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './components/Home/Home.jsx';
-import AddUser from './components/AddUser/AddUser.jsx';
 import UserDetails from './components/Home/Users/UserDetails.jsx';
+import UserList from './components/AddUser/UserList.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/adduser',
-        element: <AddUser></AddUser>
+        element: <UserList></UserList>
       },
       {
         path: '/user/:id',
