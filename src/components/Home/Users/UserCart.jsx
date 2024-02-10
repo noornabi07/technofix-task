@@ -9,7 +9,7 @@ const UserCart = ({user}) => {
                 <div className="card-body">
                     <h2 className="card-title">
                         Username:
-                        <Link className="badge badge-accent">{user.username}</Link>
+                        <Link to={`/user/${user.id}`} className="badge badge-accent">{user.username}</Link>
                     </h2>
                    <div className='mt-5'>
                         <p className='text-lg text-gray-600'>Full Name: <span className='text-green-600'>{user.firstName} {user.lastName}</span></p>
